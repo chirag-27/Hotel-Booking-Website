@@ -5,29 +5,31 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Detail</title>
+        <link href="styles\common.css" rel="stylesheet"/>
+        <link href="styles\detail.css" rel="stylesheet"/>
     </head>
     <body>
         <div id ="main">
-        <div id = "header">
-            <a href="index.html">
-            <img src = "assests\images\logo.png" height = "100px" width = "150px" alt = "logo">
-            </a>
-            <a href = "login.html">Login</a>
-            </div>
+            <header>
+                <a href="index.html">
+                <img src = "assests\images\logo.png" alt = "logo" id="logo">
+                </a>
+                <a href = "login.html">Login</a>
+            </header>
             <div id = "content">
-                <img src = "https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"></br>
+                <img src = "https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" id="radisson"></br>
                 <div id="book">
                     <form action = "payment.html" method="GET">
                         <label for="adults">Adults:</label>
                         <input type ="number" id="adults" name="adults" min="1" placeholder="1" required/><br>
                         <label for="name">Name:</label>
-                        <input type ="text" id="name" name="name" placeholder="Enter Name" required/><br>
+                        <input type ="text" id="name" name="name" placeholder="Enter Name" autocomplete="off" required/><br>
                         <label for="fromdate">From Date:</label>
                         <input type ="date" id="fromDate" name="fromDate" required/><br>
                         <label for="todate">To Date:</label>
                         <input type ="date" id="toDate" name="toDate" required/><br>
                         <label for="total">Total:</label>
-                        <input type = "number" id="total" name="total" disabled><br>
+                        <input type = "number" id="total" name="total" readonly><br>
                         <input type="submit" value="Book Now">
                     </form>
                 </div>
@@ -46,15 +48,15 @@
                     <p>lorem ipsum dolor sit amet consectetur adipiscing elit. deleniti, illum totam magni voluptatibus libero delectus nesciunt hic vel! aperiam esse asperiores culpa, natus quam quis eum ex doloremque</br> 
                         doloribus architecto!</p>
             </div>
-            <div id = "footer">
+            <footer>
                 <a href = "contact.html" method="get" target="_self">Contact Us</a>
                 <div id = "smicons">
-                    <a href ="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" height="20px" width="22px"></a>
-                    <a href ="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" height="20px" width="22px"></a>
-                    <a href ="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" height="20px" width="22px"></a>
+                    <a href ="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" class="socialMedia" id="facebook"></a>
+                    <a href ="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" class="socialMedia" id="instagram"></a>
+                    <a href ="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" class="socialMedia" id="twitter"></a>
                 </div>
                 &copy 2020 ROOM SEARCH PVT. LTD.
-            </div>
-            </div>
+            </footer>
+        </div>
     </body>
-    </html>
+</html>

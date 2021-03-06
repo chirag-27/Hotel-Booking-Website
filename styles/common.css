@@ -1,0 +1,17 @@
+/* html, body and main id of first div are given respective styles so that the content covers the whole screen*/
+html,body{
+    height:100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+}
+#logo{
+    height: 60px;
+    width: 60px;
+}
+.socialMedia{
+    height:20px;
+    width: 22px;
+}

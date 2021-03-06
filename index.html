@@ -5,36 +5,38 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Index</title>
+        <link href="styles\common.css" rel="stylesheet"/>
+        <link href="styles\index.css" rel="stylesheet"/>
     </head>
     <body>
         <div id ="main">
-            <div id = "header">
-                <img src = "assests\images\logo.png" height = "100px" width = "150px" alt = "logo">
+            <header>
+                <img src = "assests\images\logo.png" alt = "logo" id="logo">
                 <a href = "login.html">Login</a>
+            </header>
+            <div id = "content">
+                <form>
+                    <input type="text" name ="city" id="city" placeholder="City"/>
+                </form>
+                <div class="cityImgContainer">
+                    <a href="list.html">
+                    <img src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" class="cityImages">
+                    </a>
+                    <img src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" class="cityImages">
+                    <img src = "https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" class="cityImages">
+                    <img src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" class="cityImages">
                 </div>
-                <div id = "content">
-                    <form>
-                        <input type="text" name ="city" id="city" placeholder="City"/>
-                    </form>
-                    <div>
-                        <a href="list.html">
-                        <img src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" height = "300px" width = "350px">
-                        </a>
-                        <img src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" height = "300px" width = "300px">
-                        <img src = "https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" height = "300px" width = "300px">
-                        <img src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" height = "300px" width = "300px">
-                    </div>
-                    <a href="index.html">View more>></a>
-                </div>
-                <div id = "footer">
-                    <a href = "contact.html">Contact Us</a>
-                    <div id = "smicons">
-                        <a href ="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" height="20px" width="22px"></a>
-                        <a href ="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" height="20px" width="22px"></a>
-                        <a href ="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" height="20px" width="22px"></a>
-                    </div>
-                    &copy 2020 ROOM SEARCH PVT. LTD.
+                <a href="index.html">View more>></a>
             </div>
+            <footer>
+                <a href = "contact.html">Contact Us</a>
+                <div id = "smicons">
+                    <a href ="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" class="socialMedia" id="facebook"></a>
+                    <a href ="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" class="socialMedia" id="instagram"></a>
+                    <a href ="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" class="socialMedia" id="twitter"></a>
+                </div>
+                &copy 2020 ROOM SEARCH PVT. LTD.
+            </footer>
         </div>
     </body>
     </html>
