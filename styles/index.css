@@ -14,4 +14,23 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#city-search{
+    border: 1px transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 12px;
+}
+#cityimg-viewmore{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+#view-more{
+    margin:0 auto;
+    margin-bottom: 3%;
 }

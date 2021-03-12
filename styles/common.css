@@ -4,6 +4,7 @@ html,body{
     width: 100%;
     margin: 0;
     background-color: #e0e0e0;
+    font-family: "Ubuntu", sans-serif;
 }
 #main{
     height: 100%;
@@ -18,5 +19,56 @@ html,body{
     width: 22px;
 }
 header, footer{
+    height:100%;
     background-color: rosybrown;
+    width:100%;
+    margin: 0%;
+    position: sticky;
+    height: auto;
+}
+header{
+    top: 0;
+    right:0;
+    left:0;
+}
+footer{
+    overflow: auto;
+    right:0;
+    left:0;
+    bottom: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/*header content css */
+
+#login{
+    height: 100%;
+    vertical-align: middle;
+    float: right;
+    padding: 4px;
+}
+/* footer content css */
+#copyright{
+    position: absolute;
+    font-size: 10px;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+#contact-us{
+    height: 100%;
+    padding: 4px;
+    float:left;
+    vertical-align: middle;
+}
+#smicons{
+    height:100%;
+    padding: 4px;
+    float: right;
+    vertical-align: middle;
+}
+#content{
+    margin-bottom :4%;/*temp*/
 }

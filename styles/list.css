@@ -7,3 +7,24 @@
     background-color: rgb(132,136,139);
     margin:2%;
 }
+#list{
+    font-weight: bold;
+    text-align:center;
+}
+ul, li{
+    display: inline-block;
+    text-align: center;
+}
+#map-view{
+    display:none;
+}
+/* .hotelList{
+    display: grid;
+    grid-template-columns: 50% 50%;
+} */
+#hotel1{
+    display: inline-block;
+}
+#hotel2{
+    display: inline-block;
+}

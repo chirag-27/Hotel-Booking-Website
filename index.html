@@ -7,19 +7,23 @@
         <title>Index</title>
         <link href="styles\common.css" rel="stylesheet"/>
         <link href="styles\index.css" rel="stylesheet"/>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     </head>
     <body>
         <div id ="main">
-            <header>
+            <header style="clear: both;">
                 <img src = "assests\images\logo.png" alt = "logo" id="logo">
-                <a href = "login.html">Login</a>
+                <a href = "login.html" id="login">Login</a>
             </header>
             <div id = "content">
                 <div id = "search-bar">
                 <form>
-                    <input type="text" name ="city" id="city" placeholder="City"/>
+                    <div id = "search-bar-input">
+                        <input type="text" name ="city" id="city-search" placeholder="City"/>
+                    </div>  
                 </form>
                 </div>
+                <div id="cityimg-viewmore">
                 <div class="cityImgContainer">
                     <span>
                     <a href="list.html">
@@ -30,16 +34,23 @@
                     <span><img src = "https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" class="cityImages"></span>
                     <span> <img src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" class="cityImages"></span>
                 </div>
-                <a href="index.html">View more>></a>
+                <div id="view-more">
+                    <a href="index.html">View more>></a>
+                </div>
+                </div>
             </div>
-            <footer>
-                <a href = "contact.html">Contact Us</a>
+            <footer style="clear: both;">
+                <div id="contact-us">
+                    <a href = "contact.html">Contact Us</a>
+                </div>
                 <div id = "smicons">
                     <a href ="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" class="socialMedia" id="facebook"></a>
                     <a href ="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" class="socialMedia" id="instagram"></a>
                     <a href ="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" class="socialMedia" id="twitter"></a>
                 </div>
-                &copy 2020 ROOM SEARCH PVT. LTD.
+                <div id="copyright">
+                    &copy 2020 ROOM SEARCH PVT. LTD.
+                </div>
             </footer>
         </div>
     </body>
