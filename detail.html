@@ -12,35 +12,41 @@
     <body>
         <div id ="main">
             <header>
+                <div id="img">
                 <a href="index.html">
                 <img src = "assests\images\logo.png" alt = "logo" id="logo">
                 </a>
+                </div>
+                <div id="login-div">
                 <a href = "login.html" id="login">Login</a>
+                </div>
             </header>
             <div id = "content">
-                <div id = "image">
-                <img src = "https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" id="radisson"></br>   
-                </div>
-                <div id="booking-details">
-                    <form action = "payment.html" method="GET">
-                        <label for="adults">Adults:</label>
-                        <input type ="number" id="adults" name="adults" min="1" placeholder="1" required/><br>
-                        <label for="name">Name:</label>
-                        <input type ="text" id="name" name="name" placeholder="Enter Name" autocomplete="off" required/><br>
-                        <label for="fromdate">From Date:</label>
-                        <input type ="date" id="fromDate" name="fromDate" required/><br>
-                        <label for="todate">To Date:</label>
-                        <input type ="date" id="toDate" name="toDate" required/><br>
-                        <label for="total">Total:</label>
-                        <input type = "number" id="total" name="total" readonly><br>
-                        <input type="submit" value="Book Now">
-                    </form>
+                <div id="img-form">
+                    <div id = "image">
+                        <img src = "https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" id="radisson"></br>   
+                    </div>
+                    <div id="booking-details">
+                        <form action = "payment.html" method="GET">
+                            <label for="adults">Adults:</label>
+                            <input type ="number" id="adults" name="adults" min="1" placeholder="1" required/><br>
+                            <label for="name">Name:</label>
+                            <input type ="text" id="name" name="name" placeholder="Enter Name" autocomplete="off" required/><br>
+                            <label for="fromdate">From Date:</label>
+                            <input type ="date" id="fromDate" name="fromDate" required/><br>
+                            <label for="todate">To Date:</label>
+                            <input type ="date" id="toDate" name="toDate" required/><br>
+                            <label for="total">Total:</label>
+                            <input type = "number" id="total" name="total" readonly><br>
+                            <input type="submit" value="Book Now">
+                        </form>
+                    </div>
                 </div>
                 <div id="hotel-description">
-                    <p><h2>Radisson Blu Hotel</h2></p>
-                    <p>RATING</p>
+                    <p style="font-family: cursive"><h2>Radisson Blu Hotel</h2></p>
+                    <p style="font-family: cursive">RATING</p>
                     <p>5 Star</p>
-                    <p>AMENITIES</p>
+                    <p style="font-family: cursive">AMENITIES</p>
                     <ul>
                         <li>Room Services</li>
                         <li>Restaurant</li>
@@ -48,7 +54,7 @@
                         <li>Fitness Center</li>
                         <li>Pool</li>
                     </ul>
-                    <p><h5>Description</h5></p>
+                    <p style="font-family: cursive"><h5>Description</h5></p>
                     <p>lorem ipsum dolor sit amet consectetur adipiscing elit. deleniti, illum totam magni voluptatibus libero delectus nesciunt hic vel! aperiam esse asperiores culpa, natus quam quis eum ex doloremque doloribus architecto!</p>
                 </div>
             </div>
@@ -56,13 +62,13 @@
                 <div id="contact-us">
                     <a href = "contact.html" target="_self">Contact Us</a>
                 </div>
+                <div id="copyright">
+                &copy 2020 ROOM SEARCH PVT. LTD.
+                </div>
                 <div id = "smicons">
                     <a href ="https://www.facebook.com" target="_blank"><img src="assests/images/facebook.png" class="socialMedia" id="facebook"></a>
                     <a href ="https://www.instagram.com" target="_blank"><img src="assests/images/instagram.png" class="socialMedia" id="instagram"></a>
                     <a href ="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" class="socialMedia" id="twitter"></a>
-                </div>
-                <div id="copyright">
-                &copy 2020 ROOM SEARCH PVT. LTD.
                 </div>
             </footer>
         </div>

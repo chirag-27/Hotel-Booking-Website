@@ -4,8 +4,10 @@
 }
 .hotel-img-description{
     width: 40%;
-    background-color: rgb(132,136,139);
+    background-color: lightgray;
     margin:2%;
+    display: flex;
+    flex-direction: row;
 }
 #list{
     font-weight: bold;
@@ -22,9 +24,9 @@ ul, li{
     display: grid;
     grid-template-columns: 50% 50%;
 } */
-#hotel1{
+/* #hotel1{
     display: inline-block;
 }
 #hotel2{
     display: inline-block;
-}
+} */

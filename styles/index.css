@@ -1,12 +1,17 @@
 .cityImgContainer{
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    justify-content: space-evenly;
 }
 .cityImages{
     height:150px;
     width:150px;
-    padding: 4%;
     border-radius: 25%;
+    box-shadow: 10px 10px 10px grey;
+}
+.cityImages:hover {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 #search-bar{
     height: 380px;
@@ -28,7 +33,7 @@
 #cityimg-viewmore{
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content:space-between;
 }
 #view-more{
     margin:0 auto;

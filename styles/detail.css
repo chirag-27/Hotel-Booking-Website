@@ -6,12 +6,23 @@
     margin-left: 4%;
     margin-right: 4%;
     margin-top: 2%;
+    max-height: 350px;
+    flex: 75%;
 }
 #booking-details{
     margin-left: 4%;
     margin-right: 4%;
     margin-bottom: 1%;
+    flex: 25%;
 }
 #hotel-description{
     margin: 1% 4% 2% 4%;
+}
+#img-form{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    margin:1%;
+    max-height: 400px;
+    justify-content: center;
 }

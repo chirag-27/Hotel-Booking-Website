@@ -23,16 +23,24 @@ header, footer{
     background-color: rosybrown;
     width:100%;
     margin: 0%;
-    position: sticky;
+    position: fixed;
     height: auto;
+    overflow: auto;
 }
 header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     top: 0;
     right:0;
     left:0;
 }
 footer{
-    overflow: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     right:0;
     left:0;
     bottom: 0;
@@ -42,33 +50,30 @@ a{
     color: black;
 }
 /*header content css */
+#img{
+    margin-left: 1%;
+}
+#login-div{
+    margin-right: 1%;
+}
 
-#login{
+/* #login{
     height: 100%;
     vertical-align: middle;
     float: right;
     padding: 4px;
-}
+} */
 /* footer content css */
 #copyright{
-    position: absolute;
     font-size: 10px;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
 }
 #contact-us{
-    height: 100%;
-    padding: 4px;
-    float:left;
-    vertical-align: middle;
+    margin-left: 2%;
 }
 #smicons{
-    height:100%;
-    padding: 4px;
-    float: right;
-    vertical-align: middle;
+    margin-right: 2%;
 }
-#content{
-    margin-bottom :4%;/*temp*/
-}
+ #content{
+    display: flex;
+    flex-direction: column;
+} 
