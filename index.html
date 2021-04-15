@@ -5,20 +5,51 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Index</title>
+        
         <link href="styles\common.css" rel="stylesheet"/>
         <link href="styles\index.css" rel="stylesheet"/>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     </head>
     <body>
         <div id ="main">
-            <header style="clear: both;">
-                <div id="img">
-                    <img src = "assests\images\logo.png" alt = "logo" id="logo">
+            <header class="header-footer">
+                <img src = "assests\images\logo.png" id="logo" alt = "logo"/>
+                <button type="button" id="login" class="btn btn-light btn-sm" data-toggle="modal" data-backdrop="false" data-target="#login-modal">LOGIN</button>
+                
+                <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modal-label" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="login-modal-label">Please Login</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="login-form">
+                                    <div class="login-field">
+                                        <label for="username">Username: </label>
+                                        <input type="text" id="username" name="username" placeholder="Enter Username" required />
+                                    </div>
+                                    <div class="login-field">
+                                        <label for="password">Password: </label>
+                                        <input type="password" id="password" name="password" placeholder="Enter Password" autocomplete="off" required />
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button id="login-button" type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id="login-div">
-                    <a href = "login.html" id="login">Login</a>
-                </div>
+
             </header>
+
             <div id = "content">
                 <div id = "search-bar">
                 <form>
@@ -27,25 +58,71 @@
                     </div>  
                 </form>
                 </div>
+                
                 <div id="cityimg-viewmore">
-                <div class="cityImgContainer">
-                    <div>
-                    <a href="list.html">
-                    <img src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" class="cityImages">
-                    </a>
+                    <div class="cityImgContainer">
+                        <div class = "individual-image">
+                        <a href="list.html">
+                            <img src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" class="cityImages">
+                            <div class="overlay"><span>Delhi</span></div>
+                        </a>
+                        </div>
+                        <div class = "individual-image">
+                            <img src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" class="cityImages">
+                            <div class="overlay"><span>Goa</span></div>
+                        </div>
+                        <div class = "individual-image">
+                            <img src = "https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" class="cityImages">
+                            <div class="overlay"><span>Hyderabad</span></div>
+                        </div>
+                        <div class = "individual-image">
+                            <img src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" class="cityImages">
+                            <div class="overlay"><span>Kolkata</span></div>
+                        </div>
                     </div>
-                    <div><img src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" class="cityImages"></div>
-                    <div><img src = "https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" class="cityImages"></div>
-                    <div> <img src = "https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" class="cityImages"></div>
-                </div>
-                <div id="view-more">
-                    <a href="index.html">View more>></a>
-                </div>
+                    <div id="view-more">
+                        <a href="index.html"><button type="button" class="btn btn-secondary">View More</button></a>
+                    </div>
                 </div>
             </div>
-            <footer style="clear: both;">
+
+            <!-- Footer -->
+            <footer class="header-footer">
                 <div id="contact-us">
-                    <a href = "contact.html">Contact Us</a>
+                    
+                    <button type="button" id="contact" class="btn btn-info btn-sm" data-toggle="modal" data-target="#contactusModal" data-backdrop="false">
+                        Contact Us
+                    </button>
+                    
+                    <!-- Modal -->
+                    <div class="modal fade" id="contactusModal" tabindex="-1" role="dialog" aria-labelledby="contactusModalLabel" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="contactusModalLabel">Get in touch</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            </div>
+                            <div class="modal-body">
+                                
+                                <form>
+                                    <p>
+                                        Thank you for reaching out!!! <br>
+                                        Please enter you email and we will get back to you.
+                                    </p>
+                                    <label for="email">Email: </label>
+                                    <input type="text" id="email" name="email" placeholder="Enter your email id" required>
+                                </form>
+
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-primary">Submit</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                  
                 </div>
                 <div id="copyright">
                     &copy 2020 ROOM SEARCH PVT. LTD.
@@ -56,6 +133,8 @@
                     <a href ="https://twitter.com" target="_blank"><img src="assests/images/twitter.png" class="socialMedia" id="twitter"></a>
                 </div>
             </footer>
+        
         </div>
+    
     </body>
-    </html>
+</html>

@@ -11,6 +11,7 @@ html,body{
     width: 100%;
 }
 #logo{
+    margin-left: 1%;
     height: 60px;
     width: 60px;
 }
@@ -18,51 +19,46 @@ html,body{
     height:20px;
     width: 22px;
 }
-header, footer{
-    height:100%;
-    background-color: rosybrown;
-    width:100%;
-    margin: 0%;
+#login{
+    margin-right: 2%;
+}
+.login-form{
+    display: flex;
+    flex-direction: column;
+}
+.login-field{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1%;
+}
+#login-button{
+    margin: 0 auto;
+}
+
+.header-footer {
+    background-color:rosybrown;
     position: fixed;
-    height: auto;
-    overflow: auto;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    top: 0;
-    right:0;
-    left:0;
+    top:0;
 }
 footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    right:0;
-    left:0;
-    bottom: 0;
+    padding:0.7%;
+    bottom:0;
 }
+
 a{
     text-decoration: none;
     color: black;
 }
 /*header content css */
-#img{
-    margin-left: 1%;
-}
-#login-div{
-    margin-right: 1%;
-}
 
-/* #login{
-    height: 100%;
-    vertical-align: middle;
-    float: right;
-    padding: 4px;
-} */
 /* footer content css */
 #copyright{
     font-size: 10px;

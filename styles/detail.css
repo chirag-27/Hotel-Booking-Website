@@ -1,28 +1,42 @@
+#content{
+    margin-top: 7%;
+}
 #radisson{
-    height: 500px;
-    width: 500px;
+    max-height: 350px;
 }
 #image{
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-top: 2%;
-    max-height: 350px;
-    flex: 75%;
+    margin-left: 2% ;
+    border-right: none;
+    flex-grow: 3;
+    max-width: 60%;
 }
 #booking-details{
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-bottom: 1%;
-    flex: 25%;
+    margin-right: 2%;
+    flex-grow: 1;
 }
 #hotel-description{
     margin: 1% 4% 2% 4%;
 }
 #img-form{
     display: flex;
-    flex-direction: row;
+    justify-content: start;
+    align-content: center;
+}
+#booking-details, #image{
+    padding: 1%;
+    text-align: center;
     border: 1px solid black;
-    margin:1%;
     max-height: 400px;
-    justify-content: center;
+}
+
+.form-input{
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+}
+.input-box{
+    width: 60%;
+}
+#book-now{
+    margin: 0 auto;
 }
