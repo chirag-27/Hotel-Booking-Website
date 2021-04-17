@@ -18,4 +18,13 @@ var template = '<div class = "individual-image">'+
     '</div>'+
 '</div>';
 
-document.getElementsByClassName('cityImgContainer')[1].innerHTML = template;
+function viewMenu(){
+var viewText = document.getElementById("view-button").innerText ;
+if(viewText === "View More"){
+        document.getElementsByClassName('cityImgContainer')[1].innerHTML = template;
+        document.getElementById('view-button').innerHTML="View Less";
+}else{
+        document.getElementsByClassName('cityImgContainer')[1].innerHTML = " ";
+        document.getElementById('view-button').innerHTML="View More";
+    }
+}
